@@ -1,0 +1,185 @@
+[
+    {
+        "litter": "A-E",
+        "litter2": "A",
+        "mom": "Mamma: Pucki",
+        "dad": "Pappa: Pelle",
+        "grandma": "Mormor: Yalla",
+        "grandpa": "Morfar: Jackson"
+    },
+    {
+        "litter": "B",
+        "mom": "Babba",
+        "dad": "Forrest",
+        "grandma": "Anna",
+        "grandpa": "Wille"
+    },
+    {
+        "litter": "C",
+        "mom": "Anna",
+        "dad": "Pelle",
+        "grandma": "Agda",
+        "grandpa": "Calle"
+    },
+    {
+        "litter": "D",
+        "mom": "Mia",
+        "dad": "Kim",
+        "grandma": "Mimmi",
+        "grandpa": "Anders"
+    },
+    {
+        "litter": "E",
+        "mom": "Bodil",
+        "dad": "Vidar",
+        "grandma": "Antonia",
+        "grandpa": "Mathias"
+    },
+    {
+        "litter": "F",
+        "mom": "Nicole",
+        "dad": "Axel",
+        "grandma": "Mathilda",
+        "grandpa": "Jacob"
+    },
+    {
+        "litter": "G",
+        "mom": "Mathilda",
+        "dad": "Jacob",
+        "grandma": "Cissi",
+        "grandpa": "Anders"
+    },
+    {
+        "litter": "H",
+        "mom": "Amelie",
+        "dad": "Per",
+        "grandma": "Antonia",
+        "grandpa": "Mathias"
+    },
+    {
+        "litter": "I",
+        "mom": "Helga",
+        "dad": "Jacob",
+        "grandma": "Sara",
+        "grandpa": "Pelle"
+    },
+    {
+        "litter": "J",
+        "mom": "Isos",
+        "dad": "Ivar",
+        "grandma": "Mia",
+        "grandpa": "Mathias"
+    },
+    {
+        "litter": "K",
+        "mom": "Johanna",
+        "dad": "Johan",
+        "grandma": "Jozi",
+        "grandpa": "Arne"
+    },
+    {
+        "litter": "L",
+        "mom": "Kicki",
+        "dad": "Peter",
+        "grandma": "Sofia",
+        "grandpa": "Alexandra"
+    },
+    {
+        "litter": "M",
+        "mom": "Lussen",
+        "dad": "Linux",
+        "grandma": "Amelie",
+        "grandpa": "Per"
+    },
+    {
+        "litter": "N",
+        "mom": "Mimmi",
+        "dad": "Helix",
+        "grandma": "Maggie",
+        "grandpa": "Anders"
+    },
+    {
+        "litter": "O",
+        "mom": "Mímmi",
+        "dad": "Pelle",
+        "grandma": "Osis",
+        "grandpa": "Oscar"
+    },
+    {
+        "litter": "P",
+        "mom": "Amelie",
+        "dad": "Kim",
+        "grandma": "Sara",
+        "grandpa": "Stefan"
+    },
+    {
+        "litter": "Q",
+        "mom": "Pixilina",
+        "dad": "Pixi",
+        "grandma": "Mia",
+        "grandpa": "Kim"
+    },
+    {
+        "litter": "R",
+        "mom": "Pixilina",
+        "dad": "Quack",
+        "grandma": "Panama",
+        "grandpa": "Query"
+    },
+    {
+        "litter": "S",
+        "mom": "Antonia",
+        "dad": "Pelle",
+        "grandma": "Rolex",
+        "grandpa": "Rusti"
+    },
+    {
+        "litter": "T",
+        "mom": "Nala",
+        "dad": "Simba",
+        "grandma": "Rolex",
+        "grandpa": "Mustafa"
+    },
+    {
+        "litter": "U",
+        "mom": "Telly",
+        "dad": "Teddy",
+        "grandma": "Pixilina",
+        "grandpa": "Pixi"
+    },
+    {
+        "litter": "V",
+        "mom": "Ulla",
+        "dad": "Pixi",
+        "grandma": "Mia",
+        "grandpa": "Kim"
+    },
+    {
+        "litter": "W",
+        "mom": "Nala",
+        "dad": "Simba",
+        "grandma": "Sara",
+        "grandpa": "Pelle"
+    },
+    {
+        "litter": "X",
+        "mom": "Willa",
+        "dad": "Wille",
+        "grandma": "Nala",
+        "grandpa": "Simba"
+    },
+    {
+        "litter": "Y",
+        "mom": "Xela",
+        "dad": "Xion",
+        "grandma": "Mathilda",
+        "grandpa": "Jacob"
+    },
+    {
+        "litter": "Z",
+        "mom": "Yicki",
+        "dad": "Yackson",
+        "grandma": "Amelie",
+        "grandpa": "Per"
+    }
+]

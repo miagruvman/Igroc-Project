@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Aus Nord Ch C.I.B. KBW-09 Fergwyn Power O Magic (Pete)",
+        "img": "../img/hanar/pete.jpg",
+        "breeder": "Uppfödare: Mrs Barbara Ludowici, Australien",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: Fergwyn Modesty Blaise (Red & White)",
+        "dad": "Far: CH. Fergwyn Magic O Black (Tricolour)",
+        "gender": "hanar"
+    },
+    {
+        "name": "Nord Ch C.I.B Nord-V 08 Igro´c Startrek (Pepper) ",
+        "img": "../img/hanar/pepper.jpg",
+        "breeder": "Uppfödare: Eva Granlund Sjöström, Sverige",
+        "owner": "Ägare: Marie Ingemarsson, Sverige",
+        "mom": "Mor: Zodia's Gotlandia For Happy Ivy",
+        "dad": "Far: Siggen's Romulus Rocco",
+        "gender": "hanar"
+    },
+    {
+        "name": "SE CH DK CH Igro´c Yanisin",
+        "img": "../img/hanar/yanis.jpg",
+        "breeder": "Uppfödare: Eva Granlund Sjöström, Sverige",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: S CH Igro´c Skyliner",
+        "dad": "Far: N o S CH Cimath´s Calvin Klein",
+        "gender": "hanar"
+    },
+    {
+        "name": "SE Uch Belroyd Pemcader Geraint (BJ)",
+        "img": "../img/hanar/bj.jpg",
+        "breeder": "Uppfödare: A Taylor, I. Jones, K Dover, UK",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: Llaneirgw Witches Brew at Belroyd",
+        "dad": "Far: UK CH Gowerstone Jazzsinger for Pemcader",
+        "gender": "hanar"
+    },
+    {
+        "name": "Noble Baguette Justin",
+        "img": "../img/hanar/justin.jpg",
+        "breeder": "Uppfödare: Tommy Lake, Sverige",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: SE UCH Jonloran Kiss Me Kate",
+        "dad": "Far: AU CH SE UCH Fergwyn Power O Magic",
+        "gender": "hanar"
+    },
+    {
+        "name": "Igro'c Ardbeg Supernova (Ardy)",
+        "img": "../img/hanar/ardy.jpg",
+        "breeder": "Uppfödare: Eva Granlund Sjöström, Sverige",
+        "owner": "Ägare: Rebecka och David Trolleryd, Sverige",
+        "mom": "Mor: NORD JV-07 Igro'c U R Unique",
+        "dad": "Far: AU CH Bojojamile Bring It On",
+        "gender": "hanar"
+    },
+    {
+        "name": "S U CH SV-09 Igro´c Tenaya",
+        "img": "../img/tikar/tenaya.jpg",
+        "breeder": "Uppfödare: Eva Granlund Sjöström, Sverige",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: Igro'c Octavia S52326/98",
+        "dad": "Far: Igro'c Skywalker S64316/2003",
+        "gender": "tikar"
+    },
+    {
+        "name": "NJV-07 SE CH Igro´s U R Unique (Indra)",
+        "img": "../img/tikar/indra.jpg",
+        "breeder": "Uppfödare: Eva Granlund Sjöström, Sverige",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: Igro'c Quality Qira S16305/2002",
+        "dad": "Far: Nuch Siggen's Yassir N05193/05",
+        "gender": "tikar"
+    },
+    {
+        "name": "S U CH Ulf´s Chanti",
+        "img": "../img/tikar/chanti.jpg",
+        "breeder": "Uppfödare: Ulf Egil Hansen, Norge",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: N Uch Vovselia's Zurriburri 04779/03",
+        "dad": "Far: N Uch Siggen's Yassir 05193/05",
+        "gender": "tikar"
+    },
+    {
+        "name": "SEV-11 SE CH Dideriksen´s Chanel",
+        "img": "../img/tikar/chanel.jpg",
+        "breeder": "Uppfödare: Anette Dideriksen, Danmark",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige och Anette Dideriksen, Danmark",
+        "mom": "Mor: D CH Haywires Preludium",
+        "dad": "Far: S CH Igro´c Skywalker",
+        "gender": "tikar"
+    },
+    {
+        "name": "Stora Björns Arsenika",
+        "img": "../img/tikar/nika.jpg",
+        "breeder": "Uppfödare: Karin Jansson, Sverige",
+        "owner": "Ägare: Eva Granlund Sjöström, Sverige",
+        "mom": "Mor: SE UCH Siggen's Hermine",
+        "dad": "Far: Noble Baguette Justin",
+        "gender": "tikar"
+    }
+]

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title>Om oss</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="iso-8859-1" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <link href="../css/igroc.css" rel="stylesheet" media="screen" />
+        <script src="../js/jquery/jquery.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/start.js"></script>
+    </head>
+
+    <body>
+        <div id="main-frame" class="container">
+            <div id="head" class="row" th:include="fragments/menu :: logo">              
+            </div>
+            <div class="row" th:include="fragments/menu :: menu">
+            </div>
+            
+            <!-- Innehåll -->
+            
+            <div class="row">
+                <h3 class="aboutUs">Om oss</h3>
+            </div>
+
+            <p>
+                Kennel Igro´c är belägen i Norra Halland i byn Kungsäter som ligger mellan Varberg och Borås.<br/>
+                Hit flyttade vi under nyåret 89-90 till ett litet rött hus med vita knutar men som numera är blå.
+                I huset bor numera bara jag, Eva, och min man Mats, våra två katter Doris och Maya, som är mor och dotter,  och sen givetvis Corgi i växlande antal. Våra tre barn har lämnat boet en efter en under de senaste åren.
+                Vi bor mitt i naturen, med bara en synlig granne som dessutom är en sommarbostad. Här har vi otroliga möjligheter att rasta hundar och ha valpar som springer ute i det fria.
+                Jag hade min första kull 1986 och det innebär att år 2011 hade kenneln 25års-jubileum.
+                På andra sidan byn, ca 7 km bilväg, bor äldsta dottern Camilla med sin man, två små döttrar och två Corgi. Camilla ingår numera i min mors kennel Wee-Folk´s och hade sin första kull under 2010.
+                Följ gärna mig och hundarna i min blogg. Klicka här för att komma till bloggen.
+                Eva Granlund Sjöström
+            </p>
+            
+            <!-- Slut innehåll -->
+
+            <div id="footer" class="row" th:include="fragments/menu :: footer">
+            </div>
+            <script src="../js/jquery/jquery.js"></script>        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <script src="../js/start.js"></script>
+            <p th:text="${it}"></p>
+
+
+        </div>
+    </body>
+</html>

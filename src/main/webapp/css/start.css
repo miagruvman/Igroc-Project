@@ -1,0 +1,71 @@
+#logotype{
+    background-color: pink;
+}
+
+#logotype img{
+    vertical-align: middle;
+}
+
+#title{
+    vertical-align: middle;
+}
+
+#title h1{
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+.carousel-inner .item img{
+    margin: 0 auto;
+}
+
+#start-colums{
+    margin: 0 0 20px 0;
+}
+
+#start-left-column {
+}
+#start-right-column {
+}
+
+#start-left-column h3,
+#start-right-column h3 {
+    padding: 20px 0 10px 20px;
+    margin: 0 0 0 0;
+    
+}
+#start-left-column p,
+#start-right-column p {
+    padding: 10px 0 20px 20px;
+    margin: 0 0 0 0;
+    border-top: solid 1px lightgrey;
+    border-left: solid 1px lightgrey;
+    border-radius: 10px 0 0 0;
+    
+    /* border radius only top left corner */
+}
+#footer {
+    background-color: burlywood;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+}
+#footer ul {
+    list-style: none;
+    padding: 10px 0 10px 0;
+    margin: 0 0 0 0;
+}
+#footer li .glyphicon {
+    padding: 0 5px 10px 0;
+    font-size: 20px;
+    vertical-align: middle;
+}
+#footer li:last-child .glyphicon {
+    padding: 0 5px 0 0;
+    
+}
+.footer-address span {
+    display: block;
+    float: left;
+}

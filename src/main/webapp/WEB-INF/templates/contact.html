@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title>Kontakt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="iso-8859-1" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <link href="../css/igroc.css" rel="stylesheet" media="screen" />
+        <script src="../js/jquery/jquery.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/start.js"></script>
+    </head>
+
+    <body>
+        <div id="main-frame" class="container">
+            <div id="head" class="row" th:include="fragments/menu :: logo">              
+            </div>
+            <div class="row" th:include="fragments/menu :: menu">
+            </div>
+
+
+            <!-- Innehåll -->
+
+            <div class="row">
+                <h3 class="contact">Kontakt </h3>
+            </div>
+
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputName"></label>
+                    <input type="email" class="form-control" id="exampleInputName" placeholder="Namn">
+                    </input><br/>
+                    <label class="sr-only" for="exampleInputEmail2"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="exempel@exempel.se">
+                    </input><br/>
+                <textarea class="form-control" rows="8" cols="50" placeholder="Meddelande"></textarea><br/>
+                </div><br/>
+
+                
+                <button type="button" class="btn btn-success">Skicka</button>
+            </form>
+            <!-- Slut innehåll -->
+
+            <div id="footer" class="row" th:include="fragments/menu :: footer">
+            </div>
+            <script src="../js/jquery/jquery.js"></script>        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <script src="../js/start.js"></script>
+            <p th:text="${it}"></p>
+
+
+        </div>
+    </body>
+</html>

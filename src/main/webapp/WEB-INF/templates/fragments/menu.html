@@ -1,0 +1,90 @@
+<div th:fragment="logo">
+    <div id="logotype" class="col-md-12"> 
+        <h1><img src="http://placecorgi.com/200/200" alt="logo" class="img-circle"/>
+            Igroc Kennel</h1>
+    </div>
+</div>
+
+<div th:fragment="menu">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/jersey-thymeleaf/igroc">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button">Våra hundar <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/jersey-thymeleaf/igroc/hundar?kon=hanar">Hanar</a></li>
+                            <li><a href="/jersey-thymeleaf/igroc/hundar?kon=tikar">Tikar</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button">Valpkullar<span class="caret"></span></a>
+                        <ul class = "dropdown-menu" role="menu">
+                            <li><a href="/jersey-thymeleaf/igroc/valpkullar?litter=A-E">A-E</a></li>
+                            <li><a href="/jersey-thymeleaf/igroc/valpkullar?litter=F-J">F-J</a></li>
+                            <li><a href="/jersey-thymeleaf/igroc/valpkullar?litter=K-O">K-O</a></li>
+                            <li><a href="/jersey-thymeleaf/igroc/valpkullar?litter=P-T">P-T</a></li>
+                            <li><a href="/jersey-thymeleaf/igroc/valpkullar?litter=U-Z">U-Z</a></li>                                        
+                        </ul></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/jersey-thymeleaf/igroc#kopare-uppfodare">Valpköpare</a></li>
+                    <li><a href="/jersey-thymeleaf/igroc#kopare-uppfodare">Uppfödare</a></li>
+                    <li><a href="/jersey-thymeleaf/igroc/omOss">Om oss</a></li>
+                    <li><a href ="/jersey-thymeleaf/igroc/kontakt">Kontakt</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+    
+    <div th:fragment="footer">
+    <div id="footer" class="row">
+                <div class="col-md-4">Kontakt
+                    <ul>
+                        <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+46 (0)320 810 86</li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                        <a href="mailto:igroc@gmail.com">igroc@swipnet.se</a></li>
+                        <li class="footer-address">
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            <span class="address">Äskekärr, Lersik<br/>519 92 Kungsäter</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">Länkar
+                    <ul>
+                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                            <a href="http://www.skk.se/sv/" target="_blank">Svenska Kennelklubben</a></li>
+                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                            <a href="http://www.swck.org/" target="_blank">Svenska Welsh Corgiklubben</a></li>
+                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                            <a href="http://www.corgi.no/" target="_blank">Norska Welsh Corgiklubben</a></li>
+                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                            <a href="http://www.corgi.dk/" target="_blank">Danska Welsh Corgiklubben</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">Sociala medier
+                    <ul>
+                        <li><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                            <a href="http://bloggen.kenneligroc.se/#home">Blogg</a></li>
+                        <li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            <a href="http://www.facebook.com/igrockennel">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+</div>

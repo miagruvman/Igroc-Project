@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title>Valpkullar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="iso-8859-1" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <link href="../css/igroc.css" rel="stylesheet" media="screen" />
+        <script src="../js/jquery/jquery.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="../js/start.js"></script>
+    </head>
+
+    <body>
+        <div id="main-frame" class="container">
+            <div id="head" class="row" th:include="fragments/menu :: logo">              </div>
+            <div class="row" th:include="fragments/menu :: menu"></div>
+
+            <!-- Innehåll -->
+
+
+            <div class="row">
+                <div class="col-md-6" th:each="puppy : ${it}">
+                    <article class="puppyItem">
+                        <!--<h4 class="puppy-name" th:text="${puppy.litter}"></h4>-->
+                        <div class="puppy-wrapper">
+                            <h4 class = "puppy-litter2" th:text="${puppy.litter2}"></h4>
+                            <div class = "puppy-mom" th:text="${puppy.mom}"></div>
+                            <div class = "puppy-dad" th:text="${puppy.dad}"></div>
+                            <div class = "puppy-grandma" th:text="${puppy.grandma}"></div>
+                            <div class ="puppy-grandpa" th:text="${puppy.grandpa}"></div>
+                            <!--<div class ="puppy-puppies" th:text="${puppy.puppies}"></div>-->
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Slut innehåll -->
+
+            <div id="footer" class="row" th:include="fragments/menu :: footer">
+            </div>
+            <script src="../js/jquery/jquery.js"></script>        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <script src="../js/start.js"></script>
+        </div>
+    </body>
+</html>
