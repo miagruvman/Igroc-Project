@@ -1,7 +1,61 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<%@page import="mail.SendEmail" %>
 
-    <head>
+<!DOCTYPE html>
+<html>
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">-->
+
+     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen" >
+        <title>Multilingual Contact Form</title>
+    </head>
+    <body>
+        <div id="container">
+            <p class="heading">Contact Form</p>
+            <form action="index.jsp" method="POST">
+                <div class="input">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" value="" />
+                    <div id="fullname_warn" ></div>
+                </div>
+
+                <div class="input">
+                    <label for="email" >Email:</label>
+                    <input type="text" id="email" name="email" value="" />
+                    <span id="email_warn" ></span>
+                </div>
+
+                <div class="input">
+                    <label for="message" >Message:</label>
+                    <textarea cols="10" rows="5" id="message" name="message"></textarea>
+                </div>
+
+                <input type="submit" name="send" value="send" id="send" />
+            </form>
+
+            <%
+        if (request.getParameter("fullname") != null) {
+            String fullname = request.getParameter("fullname");
+            String email = request.getParameter("email");
+            String message = request.getParameter("message");
+
+            if (mail.SendEmail.run(email, fullname, message)) {
+            %>
+            <p class="goodtogo end">Mail Sent Successfully</p>
+            <%} else {%>
+            <p class="warning end">Error Sending Mail</p>
+            <%}
+        }
+            %>
+
+        </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+    </body>
+    
+    
+<!--    <head>
         <title>Kontakt</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="iso-8859-1" />
@@ -21,7 +75,7 @@
             </div>
 
 
-            <!-- InnehÂll -->
+             Inneh√•ll 
 
             <div class="row">
                 <h3 class="contact">Kontakt </h3>
@@ -30,19 +84,21 @@
 
             <form class="form-inline">
                 <div class="form-group">
-                    <label class="sr-only" for="exampleInputName"></label>
+                    <label class="sr-only" id="name-js" for="exampleInputName"></label>
                     <input type="email" class="form-control" id="exampleInputName" placeholder="Namn">
                     </input><br/>
-                    <label class="sr-only" for="exampleInputEmail2"></label>
+                    <label class="sr-only" id="email-js" for="exampleInputEmail2"></label>
                     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="exempel@exempel.se">
                     </input><br/>
-                <textarea class="form-control" rows="8" cols="50" placeholder="Meddelande"></textarea><br/>
+                    <textarea class="form-control" id="message-js" rows="8" cols="50" placeholder="Meddelande"></textarea><br/>
                 </div><br/>
 
-                
-                <button type="button" class="btn btn-success">Skicka</button>
+
+                <a type="button" class="btn btn-success" id="contactformbutton">Skicka</a>
             </form>
-            <!-- Slut innehÂll -->
+
+
+             Slut inneh√•ll 
 
             <div id="footer" class="row" th:include="fragments/menu :: footer">
             </div>
@@ -53,5 +109,5 @@
 
 
         </div>
-    </body>
+    </body>-->
 </html>

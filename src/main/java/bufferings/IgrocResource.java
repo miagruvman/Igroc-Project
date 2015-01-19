@@ -12,7 +12,7 @@ import javax.ws.rs.QueryParam;
 public class IgrocResource {
     private GsonWrapper gson = new GsonWrapper();
     private List<DogModel> dogs = gson.getAllDogs();
-    private List<PuppyModel> puppies = gson.getAllPuppies();
+    private List<PuppyModel> pups = gson.getAllPuppies();
     
     @GET 
     @Produces(MediaType.TEXT_HTML)
@@ -45,7 +45,8 @@ public class IgrocResource {
     @Path("/valpkullar")
     @Produces(MediaType.TEXT_HTML)
     public Viewable displayPuppies(@QueryParam("litter") String litter) {
-        return new Viewable("puppies", gson.getPuppiesByLitter(litter));
+        
+        return new Viewable("puppies", gson.getAllPuppies());
     }
 
 //    public static class SampleModel {

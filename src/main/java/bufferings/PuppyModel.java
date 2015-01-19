@@ -1,28 +1,31 @@
 package bufferings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Mia Gruvman
  */
 public class PuppyModel {
-    
+
     private String litter;
-    private String litter2;
     private String mom;
     private String dad;
     private String grandma;
-    private String grandpa; 
-    private String puppies;
-
-    public String getLitter2() {
-        return litter2;
-    }
-
-    public void setLitter2(String litter2) {
-        this.litter2 = litter2;
-    }
+    private String grandpa;
+    public List<Puppies> puppies= new ArrayList<>();
     
-    public PuppyModel() {}
+    public PuppyModel() {
+    }
+ 
+    public List<Puppies> getPuppies() {        
+        return puppies;
+    }
+
+    public void setPuppies(List<Puppies> puppies) {
+        this.puppies = puppies;
+    }
 
     public String getLitter() {
         return litter;
@@ -64,11 +67,4 @@ public class PuppyModel {
         this.grandpa = grandpa;
     }
 
-    public String getPuppies() {
-        return puppies;
-    }
-
-    public void setPuppies(String puppies) {
-        this.puppies = puppies;
-    }
 }
