@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
     <head>
-        <title>Våra Hundar</title>
+        <title>SHÖP!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="iso-8859-1" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-        <link href="../css/igroc.css" rel="stylesheet" media="screen" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+        <link href="../css/igroc.css" rel="stylesheet" media="screen" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script src="../js/start.js"></script>
@@ -16,28 +17,27 @@
 
     <body>
         <div id="main-frame" class="container">
-            <div id="head" class="row" th:include="fragments/menu :: logo">              </div>
+            <div id="head" class="row" th:include="fragments/menu :: logo"></div>
             <div class="row" th:include="fragments/menu :: menu"></div>
 
-            <!-- Innehåll -->
+            <!-- Innehåll-->
             <div class="row"> 
-                <h2></h2>
-                <div class="col-md-6" th:each="dog : ${it}">
-                    <article class="dogItem">
-                        <h4 class="dog-name" th:text="${dog.name}"></h4>
-                        <div class="dog-wrapper">
-                            <img class = "dog-img" th:src="${dog.img}" alt="hond" />
-                            <div class = "dog-breeder" th:text="${dog.breeder}"></div>
-                            <div class = "dog-owner" th:text="${dog.owner}"></div>
-                            <div class = "dog-mom" th:text="${dog.mom}"></div>
-                            <div class ="dog-dad" th:text="${dog.dad}"></div>
+                <div class="ensam" th:each="product : ${it}">
+                    <img class ="pimg" th:src="'../img/products/'+${product.id} + '.jpg'" alt="produkt" />
+                    <article th:id="${product.id}" class="product-item">
+                        <div class="product-wrapper">
+                            <h2 class="pname" th:text="${product.name}"></h2>
+                            <h4 class="pprice" th:text="${product.price}"></h4>
+                            <div class="pdes" th:text="${product.productdes}"></div>
+                            <button class="btn btn-default" type="submit">Lägg i Varukorg</button>
                         </div>
+
                     </article>
                 </div>
             </div>
-            <!-- Slut innehåll -->
 
-            <div id="footer" class="row" th:include="fragments/menu :: footer">
+            <!--            Slut innehåll-->
+           <div id="footer" class="row" th:include="fragments/menu :: footer">
             </div>         
         </div>
     </body>

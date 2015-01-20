@@ -10,11 +10,12 @@ import javax.ws.rs.QueryParam;
 
 @Path("/")
 public class IgrocResource {
+
     private GsonWrapper gson = new GsonWrapper();
     private List<DogModel> dogs = gson.getAllDogs();
-    private List<PuppyModel> puppies = gson.getAllPuppies();
-    
-    @GET 
+    private List<PuppyModel> pups = gson.getAllPuppies();
+
+    @GET
     @Produces(MediaType.TEXT_HTML)
     public Viewable displayHome() {
         return new Viewable("home");
@@ -26,36 +27,47 @@ public class IgrocResource {
     public Viewable contact() {
         return new Viewable("contact");
     }
-    
+
     @GET
     @Path("/omOss")
     @Produces(MediaType.TEXT_HTML)
     public Viewable aboutUs() {
         return new Viewable("aboutUs");
     }
-    
+
     @GET
     @Path("/hundar")
     @Produces(MediaType.TEXT_HTML)
     public Viewable displayDogs(@QueryParam("kon") String gender) {
         return new Viewable("dogs", gson.getDogsByGender(gender));
     }
-    
+
     @GET
     @Path("/valpkullar")
     @Produces(MediaType.TEXT_HTML)
     public Viewable displayPuppies(@QueryParam("litter") String litter) {
-        return new Viewable("puppies", gson.getPuppiesByLitter(litter));
+
+        return new Viewable("puppies", gson.getAllPuppies());
     }
 
-//    public static class SampleModel {
-//        
-//        public String greeting;
-//        public String name;
-//
-//        public SampleModel(String greeting, String name) {
-//            this.greeting = greeting;
-//            this.name = name;
-//        }
-//    }
+    @GET
+    @Path("/shop")
+    @Produces(MediaType.TEXT_HTML)
+    public Viewable shop() {
+        return new Viewable("shop", gson.getAllProducts());
+    }
+
+    @GET
+    @Path("/shop/product")
+    @Produces(MediaType.TEXT_HTML)
+    public Viewable displayProducts(@QueryParam("id") String id) {
+        return new Viewable("product", gson.getProductsById(id));
+    }
+    
+    @GET
+    @Path("/shop/cart")
+    @Produces(MediaType.TEXT_HTML)
+    public Viewable displayCart(@QueryParam("name") String name) {
+        return new Viewable("product", gson.getProductsById(name));
+    }
 }

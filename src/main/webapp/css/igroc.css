@@ -1,3 +1,6 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 #logotype{
     background-color: pink;
 }
@@ -23,11 +26,6 @@
 
 #start-colums{
     margin: 0 0 20px 0;
-}
-
-#start-left-column {
-}
-#start-right-column {
 }
 
 #start-left-column h3,
@@ -134,25 +132,9 @@ h4.dog-name {
     text-align: center;
 }
 
-
-div.dog-img {
-}
-
 div.dog-breeder {
     text-align: left;
     margin-top: 5px;
-}
-
-div.dog-owner {
-
-}
-
-div.dog-mom {
-
-}
-
-div.dog-dad {
-
 }
 
 .form-inline {
@@ -176,3 +158,73 @@ div.dog-dad {
 .aboutUs {
     margin-left: 15px;
 }
+
+
+/* Kim css */
+article.item {
+    min-height: 250px;
+}
+article.item img.dog-img {
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+article.webshop-item {
+    min-height: 300px;
+    text-align: left;
+    border: solid 1px #DDD;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+article.webshop-item:hover {
+    cursor: pointer;
+}
+
+article.webshop-item img.product-img {
+    max-height: 200px;
+    margin: 0 auto;
+    /*display: block;*/
+    padding: 10px;
+}
+article.webshop-item img.product-img:hover {
+    padding: 5px;
+}
+.webshop-item .shop-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.name, .price,
+.productdes, .id {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+div.product-name {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.product-wrapper{
+    margin-left: 500px;
+
+}
+
+.pimg{
+    float: left;
+    margin-bottom: 50px;
+}
+
+.pdes{
+    max-width: 600px;
+    font-family: 'Open Sans', sans-serif;
+
+    margin-bottom: 50px;
+}
+
+
+
+

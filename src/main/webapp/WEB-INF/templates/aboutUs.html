@@ -8,9 +8,11 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
         <link href="../css/igroc.css" rel="stylesheet" media="screen" />
-        <script src="../js/jquery/jquery.js"></script>        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script src="../js/start.js"></script>
+        <script type="text/javascript" src="jquery.contactable.js"></script>
     </head>
 
     <body>
@@ -19,15 +21,15 @@
             </div>
             <div class="row" th:include="fragments/menu :: menu">
             </div>
-            
+
             <!-- Innehåll -->
-            
+
             <div class="row">
                 <h3 class="aboutUs">Om oss</h3>
             </div>
 
             <p>
-                Kennel Igro´c är belägen i Norra Halland i byn Kungsäter som ligger mellan Varberg och Borås.<br/>
+                Kennel Igroc är belägen i Norra Halland i byn Kungsäter som ligger mellan Varberg och Borås.<br/>
                 Hit flyttade vi under nyåret 89-90 till ett litet rött hus med vita knutar men som numera är blå.
                 I huset bor numera bara jag, Eva, och min man Mats, våra två katter Doris och Maya, som är mor och dotter,  och sen givetvis Corgi i växlande antal. Våra tre barn har lämnat boet en efter en under de senaste åren.
                 Vi bor mitt i naturen, med bara en synlig granne som dessutom är en sommarbostad. Här har vi otroliga möjligheter att rasta hundar och ha valpar som springer ute i det fria.
@@ -36,17 +38,11 @@
                 Följ gärna mig och hundarna i min blogg. Klicka här för att komma till bloggen.
                 Eva Granlund Sjöström
             </p>
-            
+
             <!-- Slut innehåll -->
 
             <div id="footer" class="row" th:include="fragments/menu :: footer">
             </div>
-            <script src="../js/jquery/jquery.js"></script>        
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-            <script src="../js/start.js"></script>
-            <p th:text="${it}"></p>
-
-
         </div>
     </body>
 </html>

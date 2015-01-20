@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
     <head>
-        <title>Våra Hundar</title>
+        <title>Varukorg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="iso-8859-1" />
 
@@ -16,27 +17,23 @@
 
     <body>
         <div id="main-frame" class="container">
-            <div id="head" class="row" th:include="fragments/menu :: logo">              </div>
+            <div id="head" class="row" th:include="fragments/menu :: logo"></div>
             <div class="row" th:include="fragments/menu :: menu"></div>
 
-            <!-- Innehåll -->
+            <!-- Innehåll-->
+            
             <div class="row"> 
-                <h2></h2>
-                <div class="col-md-6" th:each="dog : ${it}">
-                    <article class="dogItem">
-                        <h4 class="dog-name" th:text="${dog.name}"></h4>
-                        <div class="dog-wrapper">
-                            <img class = "dog-img" th:src="${dog.img}" alt="hond" />
-                            <div class = "dog-breeder" th:text="${dog.breeder}"></div>
-                            <div class = "dog-owner" th:text="${dog.owner}"></div>
-                            <div class = "dog-mom" th:text="${dog.mom}"></div>
-                            <div class ="dog-dad" th:text="${dog.dad}"></div>
+                <div class="col-md-4" th:each="cart : ${it}">
+                    <article class="cart-item">
+                        <div class="cart-wrapper">
+                            
                         </div>
                     </article>
                 </div>
             </div>
-            <!-- Slut innehåll -->
 
+            <!--            Slut innehåll-->
+            
             <div id="footer" class="row" th:include="fragments/menu :: footer">
             </div>         
         </div>

@@ -25,7 +25,7 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                           role="button">Våra hundar <span class="caret"></span></a>
+                           role="button" aria-expanded="true">Våra hundar <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/jersey-thymeleaf/igroc/hundar?kon=hanar">Hanar</a></li>
                             <li><a href="/jersey-thymeleaf/igroc/hundar?kon=tikar">Tikar</a></li>
@@ -44,47 +44,53 @@
                         </ul></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/jersey-thymeleaf/igroc/shop">Shop</a></li>
                     <li><a href="/jersey-thymeleaf/igroc#kopare-uppfodare">Valpköpare</a></li>
                     <li><a href="/jersey-thymeleaf/igroc#kopare-uppfodare">Uppfödare</a></li>
                     <li><a href="/jersey-thymeleaf/igroc/omOss">Om oss</a></li>
                     <li><a href ="/jersey-thymeleaf/igroc/kontakt">Kontakt</a></li>
+                    <li><a href="/jersey-thymeleaf/igroc/shop">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
+
 </div>
-    
-    <div th:fragment="footer">
+
+<div th:fragment="footer">
     <div id="footer" class="row">
-                <div class="col-md-4">Kontakt
-                    <ul>
-                        <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+46 (0)320 810 86</li>
-                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                                        <a href="mailto:igroc@gmail.com">igroc@swipnet.se</a></li>
-                        <li class="footer-address">
-                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                            <span class="address">Äskekärr, Lersik<br/>519 92 Kungsäter</span></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">Länkar
-                    <ul>
-                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-                            <a href="http://www.skk.se/sv/" target="_blank">Svenska Kennelklubben</a></li>
-                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-                            <a href="http://www.swck.org/" target="_blank">Svenska Welsh Corgiklubben</a></li>
-                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-                            <a href="http://www.corgi.no/" target="_blank">Norska Welsh Corgiklubben</a></li>
-                        <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-                            <a href="http://www.corgi.dk/" target="_blank">Danska Welsh Corgiklubben</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">Sociala medier
-                    <ul>
-                        <li><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                            <a href="http://bloggen.kenneligroc.se/#home">Blogg</a></li>
-                        <li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                            <a href="http://www.facebook.com/igrockennel">Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-md-4">Kontakt
+            <ul>
+                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+46 (0)320 810 86</li>
+                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    <a href="mailto:igroc@gmail.com">igroc@swipnet.se</a></li>
+                <li class="footer-address">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    <span class="address">Äskekärr, Lersik<br/>519 92 Kungsäter</span></li>
+            </ul>
+        </div>
+        <div class="col-md-4">Länkar
+            <ul>
+                <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                    <a href="http://www.skk.se/sv/" target="_blank">Svenska Kennelklubben</a></li>
+                <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                    <a href="http://www.swck.org/" target="_blank">Svenska Welsh Corgiklubben</a></li>
+                <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                    <a href="http://www.corgi.no/" target="_blank">Norska Welsh Corgiklubben</a></li>
+                <li><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                    <a href="http://www.corgi.dk/" target="_blank">Danska Welsh Corgiklubben</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">Sociala medier
+            <ul>
+                <li><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                    <a href="http://bloggen.kenneligroc.se/#home" target="_blank">Blogg</a></li>
+                <li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                    <a href="http://www.facebook.com/igrockennel" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
 </div>

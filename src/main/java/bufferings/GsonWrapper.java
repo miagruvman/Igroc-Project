@@ -26,6 +26,10 @@ public class GsonWrapper {
     }.getType();
     private List<PuppyModel> allPuppies = new ArrayList<>();
 
+    private Type shopType = new TypeToken<List<ProductModel>>() {
+    }.getType();
+    private List<ProductModel> allProducts = new ArrayList<>();
+
     public GsonWrapper() {
     }
 
@@ -62,8 +66,25 @@ public class GsonWrapper {
 
     }
 
+    public List<ProductModel> getAllProducts() {
+        try {
+            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+            InputStream inputStream = classLoader.getResourceAsStream("shop.json");
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+
+            allProducts = gson.fromJson(bufferedReader, shopType);
+            bufferedReader.close();
+            inputStream.close();
+
+            return allProducts;
+        } catch (IOException e) {
+            return null;
+        }
+
+    }
+    
     public List<DogModel> getDogsByGender(String gender) {
-        List<DogModel> dogsByGender = new ArrayList<>();
+        List<DogModel> dogsByGender = new ArrayList();
 
         for (DogModel h : getAllDogs()) {
             if (h.getGender().equals(gender)) {
@@ -73,6 +94,27 @@ public class GsonWrapper {
         return dogsByGender;
     }
 
+    public List<ProductModel> getProductsById(String id) {
+        List<ProductModel> productsById = new ArrayList<>();
+
+        for (ProductModel s : getAllProducts()) {
+            if (s.getId().equals(id)) {
+                productsById.add(s);
+            }
+        }
+        return productsById;
+    }
+
+    public ProductModel getProductById(String id) {
+        
+        for(ProductModel product : allProducts) {
+            if(product.getId().equals(id)) {
+                return product;
+            }
+        }
+        return null;
+    }
+    
     public List<PuppyModel> getPuppiesByLitter(String litter) {
         List<PuppyModel> puppiesByLitter = new ArrayList();
 
@@ -81,7 +123,7 @@ public class GsonWrapper {
                 puppiesByLitter.add(p);
             }
         }
-        return puppiesByLitter; 
+        return puppiesByLitter;
     }
 
 }
