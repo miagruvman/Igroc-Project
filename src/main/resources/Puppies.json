@@ -1,43 +1,428 @@
 [
-    {
-        "litter": "A",
-        "mom": "Pucki",
-        "dad": "Pelle",
-        "grandma": "Yalla",
-        "grandpa": "Jackson",
-        "puppies": [
-            {
-             
-            }
-        ]
-    },
-    {
-        "litter": "B",
-        "mom": "Babba",
-        "dad": "Forrest",
-        "grandma": "Anna",
-        "grandpa": "Wille",
-        "puppies": [
-            {
-                "name": "Arne",
-                "name": "Allan",
-                "name": "Alex",
-                "name": "Albino"
-            }
-        ]
-    },
-    {
-        "litter": "C",
-        "mom": "Anna",
-        "dad": "Pelle",
-        "grandma": "Agda",
-        "grandpa": "Calle",
-        "puppies": [
-            {
-                "name": "Arne",
-                "name": "Allan",
-                "name": "Alex"
-            }
-        ]
-    }
-]
+        {
+        "kull": "A",
+                "mamma": "Pucki",
+                "pappa": "Pelle",
+                "mormor": "Yalla",
+                "morfar": "Jackson",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "ada"},
+                        {"namn": "amelie"},
+                        {"namn": "agge"}
+                        ]
+                        }
+        },
+        {
+        "kull": "B",
+                "mamma": "Babba",
+                "pappa": "Forrest",
+                "mormor": "Anna",
+                "morfar": "Wille",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Biscuit"},
+                        {"namn": "Bulle"},
+                        {"namn": "Bobby"}
+                        ]
+                        }
+        },
+        {
+        "kull": "C",
+                "mamma": "Anna",
+                "pappa": "Pelle",
+                "mormor": "Agda",
+                "morfar": "Calle",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Ceasar"},
+                        {"namn": "Cecilia"},
+                        {"namn": "Cilla"}
+                        ]
+                        }
+        },
+        {
+        "kull": "D",
+                "mamma": "Mia",
+                "pappa": "Kim",
+                "mormor": "Mimmi",
+                "morfar": "Anders",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Diddi"},
+                        {"namn": "Daniel"},
+                        {"namn": "Disco"}
+                        ]
+                        }
+        },
+        {
+        "kull": "E",
+                "mamma": "Bodil",
+                "pappa": "Vidar",
+                "mormor": "Antonia",
+                "morfar": "Mathias",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Erik"},
+                        {"namn": "Erika"},
+                        {"namn": "Exi"}
+                        ]
+                        }
+        },
+        {
+        "kull": "F",
+                "mamma": "Nicole",
+                "pappa": "Axel",
+                "mormor": "Mathilda",
+                "morfar": "Jacob",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Fiffi"},
+                        {"namn": "Felicia"},
+                        {"namn": "Fredrik"}
+                        ]
+                        }
+        },
+        {
+        "kull": "G",
+                "mamma": "Mathilda",
+                "pappa": "Jacob",
+                "mormor": "Cissi",
+                "morfar": "Anders",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Gertrud"},
+                        {"namn": "Gili"},
+                        {"namn": "Gixi"}
+                        ]
+                        }
+        },
+        {
+        "kull": "H",
+                "mamma": "Amelie",
+                "pappa": "Per",
+                "mormor": "Antonia",
+                "morfar": "Mathias",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Helga"},
+                        {"namn": "Heidi"},
+                        {"namn": "Hexli"}
+                        ]
+                        }
+        },
+        {
+        "kull": "I",
+                "mamma": "Helga",
+                "pappa": "jacob",
+                "mormor": "Sara",
+                "morfar": "Pelle",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Isos"},
+                        {"namn": "Ivar"},
+                        {"namn": "Iruff"}
+                        ]
+                        }
+        },
+        {
+        "kull": "J",
+                "mamma": "Isos",
+                "pappa": "Ivar",
+                "mormor": "Mia",
+                "morfar": "Mathias",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Johan"},
+                        {"namn": "Johanna"},
+                        {"namn": "Josi"}
+                        ]
+                        }
+        },
+        {
+        "kull": "K",
+                "mamma": "Johanna",
+                "pappa": "Johan",
+                "mormor": "Jozi",
+                "morfar": "Arne",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Klick"},
+                        {"namn": "Kikki"},
+                        {"namn": "Kristian"}
+                        ]
+                        }
+        },
+        {
+        "kull": "L",
+                "mamma": "Kicki",
+                "pappa": "Peter",
+                "mormor": "Sofia",
+                "morfar": "Alexandra",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Linus"},
+                        {"namn": "Linux"},
+                        {"namn": "Lussi"}
+                        ]
+                        }
+        },
+        {
+        "kull": "M",
+                "mamma": "Lussen",
+                "pappa": "Linux",
+                "mormor": "Amelie",
+                "morfar": "Per",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Mimmi"},
+                        {"namn": "Maggie"},
+                        {"namn": "Marcus"}
+                        ]
+                        }
+        },
+        {
+        "kull": "N",
+                "mamma": "Mimmi",
+                "pappa": "Helix",
+                "mormor": "Maggie",
+                "morfar": "Anders",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Ninni"},
+                        {"namn": "Niclas"},
+                        {"namn": "Nejvor"}
+                        ]
+                        }
+        },
+        {
+        "kull": "O",
+                "mamma": "Mímmi",
+                "pappa": "Pelle",
+                "mormor": "Osis",
+                "morfar": "Oscar",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Oscar"},
+                        {"namn": "Opis"},
+                        {"namn": "Oxis"}
+                        ]
+                        }
+        },
+        {
+        "kull": "P",
+                "mamma": "Amelie",
+                "pappa": "Kim",
+                "mormor": "Sara",
+                "morfar": "Stefan",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Puppi"},
+                        {"namn": "Pixi"},
+                        {"namn": "Pixilina"}
+                        ]
+                        }
+        },
+        {
+        "kull": "Q",
+                "mamma": "Pixilina",
+                "pappa": "Pixi",
+                "mormor": "Mia",
+                "morfar": "Kim",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Query"},
+                        {"namn": "Quixi"},
+                        {"namn": "Quack"}
+                        ]
+                        }
+        },
+        {
+        "kull": "R",
+                "mamma": "Pixilina",
+                "pappa": "Quack",
+                "mormor": "Panama",
+                "morfar": "Query",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Rusti"},
+                        {"namn": "Rulle"},
+                        {"namn": "Rolex"}
+                        ]
+                        }
+        }, {
+"kull": "S",
+        "mamma": "Antonia",
+        "pappa": "Pelle",
+        "mormor": "Rolex",
+        "morfar": "Rusti",
+        "valpar":
+        {
+        "valp":
+                [
+                {"namn": "Simba"},
+                {"namn": "Stella"},
+                {"namn": "Snuffi"}
+                ]
+                }
+}, {
+"kull": "T",
+        "mamma": "Nala",
+        "pappa": "Simba",
+        "mormor": "Rolex",
+        "morfar": "Mustafa",
+        "valpar":
+        {
+        "valp":
+                [
+                {"namn": "Todo"},
+                {"namn": "Telly"},
+                {"namn": "Teddy"}
+                ]
+                }
+},
+        {
+        "kull": "U",
+                "mamma": "Telly",
+                "pappa": "Teddy",
+                "mormor": "Pixilina",
+                "morfar": "Pixi",
+                "valpar":
+                {
+                "valp":
+                        [
+                        {"namn": "Ugi"},
+                        {"namn": "Ugdis"},
+                        {"namn": "Ulla"}
+                        ]
+                                }
+                        },
+                                {
+                                "kull": "V",
+                                        "mamma": "Ulla",
+                                        "pappa": "Pixi",
+                                        "mormor": "Mia",
+                                        "morfar": "Kim",
+                                        "valpar":
+                                        {
+                                        "valp":
+                                                [
+                                                {"namn": "Ville"},
+                                                {"namn": "Villa"},
+                                                {"namn": "Vilsen"}
+                                                ]
+                                                }
+                                },
+                                {
+                                "kull": "W",
+                                        "mamma": "Nala",
+                                        "pappa": "Simba",
+                                        "mormor": "Sara",
+                                        "morfar": "Pelle",
+                                        "valpar":
+                                        {
+                                        "valp":
+                                                [
+                                                {"namn": "Wille"},
+                                                {"namn": "Wilson"},
+                                                {"namn": "Wictoria"}
+                                                ]
+                                                }
+                                },
+                                {
+                                "kull": "X",
+                                        "mamma": "Willa",
+                                        "pappa": "Wille",
+                                        "mormor": "Nala",
+                                        "morfar": "Simba",
+                                        "valpar":
+                                        {
+                                        "valp":
+                                                [
+                                                {"namn": "Xion"},
+                                                {"namn": "Xcet"},
+                                                {"namn": "Xela"}
+                                                ]
+                                                }
+                                },
+                                {
+                                "kull": "Y",
+                                        "mamma": "Xela",
+                                        "pappa": "Xion",
+                                        "mormor": "Mathilda",
+                                        "morfar": "Jacob",
+                                        "valpar":
+                                        {
+                                        "valp":
+                                                [
+                                                {"namn": "Yalla"},
+                                                {"namn": "Yackson"},
+                                                {"namn": "Yicki"}
+                                                ]
+                                                }
+                                },
+                                {
+                                "kull": "Z",
+                                        "mamma": "Yicki",
+                                        "pappa": "Yackson",
+                                        "mormor": "Amelie",
+                                        "morfar": "Per",
+                                        "valpar":
+                                        {
+                                        "valp":
+                                                [
+                                                {"namn": "Zion"},
+                                                {"namn": "Zalla"},
+                                                {"namn": "Zixon"}
+                                                ]
+                                                }
+                                }
+                        ]
+
+
+
+
+
+
+
+
+
+
+
+
