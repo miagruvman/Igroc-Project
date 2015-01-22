@@ -27,30 +27,30 @@
                     <article class="puppyItem">
                         <h4 class="puppy-name" th:text="${puppy.litter}"></h4>
                         <div class="puppy-wrapper">
-                            <!--<h4 class = "puppy-litter2" th:text="${puppy}"></h4>-->
-                            <div class = "puppy-mom" th:text="${puppy.mom}"></div>
-                            <div class = "puppy-dad" th:text="${puppy.dad}"></div>
+                            <h4 class = "puppy-litter2" th:text="${puppy}"></h4>
+                            <div class = "puppy-mom" th:text="${puppy.mother}"></div>
+                            <div class = "puppy-dad" th:text="${puppy.father}"></div>
                             <div class = "puppy-grandma" th:text="${puppy.grandma}"></div>
                             <div class ="puppy-grandpa" th:text="${puppy.grandpa}"></div>
 
                             <h5 th:text="${puppy.puppies}"></h5>
-<!--                            <ul>
+                            <ul>
                                 <li th:each="pup : ${puppy.puppies}" th:text="${pup}">Fan</li>
                                 <li th:each="pup : *{puppy.puppies}" th:text="${pup.name}">Fan</li>
                                 <li th:each="pup : ${puppy.puppies}" th:text="${pup.name}">Fan</li>
 
-                            </ul>  -->
-                            <!--                                <p th:each="${p.name}">Fpup-AN</p>-->
-                            <!--                                <div th:text = "${#p.lists.size(list)}"></div>-->
-                            <!--</div>-->
+                            </ul>  
+<!--                            <p th:each="${p.name}">Fpup-AN</p>
+                            <div th:text = "${#p.lists.size(list)}"></div>-->
                         </div>
-                    </article>
                 </div>
+                </article>
             </div>
-            <!-- Slut innehåll -->
+        </div>
+        <!-- Slut innehåll -->
 
-            <div id="footer" class="row" th:include="fragments/menu :: footer">
-            </div>
+        <div id="footer" class="row" th:include="fragments/menu :: footer">
+        </div>
         </div>
     </body>
 </html>

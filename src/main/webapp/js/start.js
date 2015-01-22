@@ -16,10 +16,27 @@ $(document).ready(function () {
 
     });
 
-    $('#contactable').contactable({
-        subject: 'A Feeback Message'
-    });
+ $( "#contactformbutton" ).click(function() {
+  console.log( "Handler for .click() called." );
+});
 
+    
+//    $(function () {
+//        $("#contactform").on('submit', function (e) {
+//            alert('Du skrev in något');
+//            var form = $("#contactform");
+//            e.preventDefault();
+//            $.ajax({
+//                type: "POST",
+//                url: "jersey-thymeleaf/igroc/contact",
+//                data: form.serialize(),
+//                success: function (data) {
+//                    alert(data.toString());
+//
+//                }
+//            });
+//        });
+//    });
 });
 
 

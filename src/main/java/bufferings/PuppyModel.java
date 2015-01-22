@@ -10,8 +10,8 @@ import java.util.List;
 public class PuppyModel {
 
     private String litter;
-    private String mom;
-    private String dad;
+    private String mother;
+    private String father;
     private String grandma;
     private String grandpa;
     public List<Puppies> puppies= new ArrayList<>();
@@ -35,20 +35,20 @@ public class PuppyModel {
         this.litter = litter;
     }
 
-    public String getMom() {
-        return mom;
+    public String getMother() {
+        return mother;
     }
 
-    public void setMom(String mom) {
-        this.mom = mom;
+    public void setMother(String mother) {
+        this.mother = mother;
     }
 
-    public String getDad() {
-        return dad;
+    public String getFather() {
+        return father;
     }
 
-    public void setDad(String dad) {
-        this.dad = dad;
+    public void setFather(String father) {
+        this.father = father;
     }
 
     public String getGrandma() {

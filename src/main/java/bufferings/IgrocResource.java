@@ -2,10 +2,12 @@ package bufferings;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import com.google.gson.Gson;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import com.sun.jersey.api.view.Viewable;
 import java.util.List;
+import javax.ws.rs.POST;
 import javax.ws.rs.QueryParam;
 
 @Path("/")
@@ -45,9 +47,10 @@ public class IgrocResource {
     @GET
     @Path("/valpkullar")
     @Produces(MediaType.TEXT_HTML)
-    public Viewable displayPuppies(@QueryParam("litter") String litter) {
+    public String displayPuppies(@QueryParam("litter") String litter) {
 
-        return new Viewable("puppies", gson.getAllPuppies());
+//        return new Viewable("puppies", gson.getAllPuppies());
+        return new Gson().toJson(gson.getAllPuppies());
     }
 
     @GET
